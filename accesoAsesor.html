@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/web.png">
+    <link rel="icon" type="image/png" href="assets/images/web.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	 <!-- Script de JS-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+  <!--   Archivo de validaciones personalizado   -->
+  <script src="assets/js/traduccionesValidate.js"></script>
+  <!--  Alertas de SweetAlert   -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!--  Archivo de Funciones de registro   -->	
+  <script src="assets/js/FuncionesAll.js"></script>
+    <title>Inicio Usuario</title>
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+    <!--  Fuentes - Bootstrap   -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!--        CSS              -->
+    <link href="assets/css/registro.css" rel="stylesheet" />
+</head>
+
+<body>
+	
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+      <img src="assets/img/willie-wonka.png" alt="" width="80" height="80" class="d-inline-block align-text-center">
+      Willie Wonka
+    </a> 
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+		  
+		  <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="Ordenes.html">Ordenes</a>
+        </li>
+		  
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+    <div class="container">
+
+        <div class="col-sm-8">
+
+            <div class="wizard-container">
+
+                <div class="Formulario">
+                    <form action="javascript:guardarProductos()" id="formularioProd">
+
+                        <div class="wizard-header">
+                            <img src="assets/img/wonka_regsitro.jpg" class="imgNav" title="" />
+                        </div>
+
+                        <div class="tab-content">
+                            <div>
+                                <h2 class="info-text"> Inicio para 	Asesores</h2>
+								<p class="info-text"> desde aquí podrás registrar tus órdenes del catálogo de Willie Wonka</p>
+                                
+                                
+                                </div>
+                        </div>
+                        <div class="wizard-footer height-wizard">
+							
+							<div class="btnReg">
+                                <input type="submit" name="registrarOrden" class="btn btn-wd btn-sm" id="registrar" value="Registrar una orden" onclick="window.location.href='Ordenes.html';"/>
+                            </div>
+                            
+                            <div class="clearfix"></div>
+                        </div>
+                    </form>
+                </div>
+            </div> 
+        </div>
+    </div> 
+
+    <div class="footer">
+        
+    </div>
+
+    </div>
+
+   
+</body>
+</html>

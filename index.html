@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/images/web.png">
+  <link rel="icon" type="image/png" href="assets/images/web.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ingreso a cuenta</title>
+  <!--  Fuentes - Bootstrap -->
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	
+  <!-- Iconos font -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/login.css">
+</head>
+
+<body>
+	
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+      <img src="assets/img/willie-wonka.png" alt="" width="80" height="80" class="d-inline-block align-text-center">
+      Willie Wonka
+    </a> 
+    
+  </div>
+</nav>
+	
+  <main class="d-flex align-items-center min-vh-100 py-3 py-md-0">
+    <div class="container">
+      <div class="card login-card">
+        <div class="row no-gutters">
+          <div class="col-md-5">
+            <img src="assets/img/side-wonka.jpg" alt="login" class="login-card-img">
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <div class="brand-wrapper">
+                <img src="assets/img/willie-wonka.png" alt="logo" class="logo">
+              </div>
+              <p class="login-card-description">Revista por Catálogo</p>
+
+              <!-- Formulario de ingreso -->
+              <form action="javascript:traerUsuarios()" id="formulario" name="form">
+
+                <div class="form-group">
+                  <i class="fas fa-envelope form-control-feedback" aria-hidden="true"></i>
+                  <input type="email" name="email" id="email" class="form-control" placeholder="Correo Electrónico"
+                    required>
+                </div>
+
+                <div class="form-group">
+                  <i class="fas fa-lock form-control-feedback" aria-hidden="true"></i>
+                  <input type="password" name="password" id="password" class="form-control" placeholder="Contraseña"
+                    required>
+                </div>
+
+                <div class="form-group">
+                  <a href="#" class="forgot-password-link">¿Olvidaste tu contraseña?</a>
+                </div>
+                
+                <div class="btnLog col-md-12">
+                  <input name="login" id="login" class="btn btn-block btn-wd login-btn" type="submit" value="Ingresar">
+                </div>
+
+              </form>
+
+              <p class="login-card-footer-text">¿No tienes cuenta? <a href="registro.html" class="text-reset">Crea una aquí. <i class="fas fa-arrow-circle-right"></i></a></p>
+                  <nav class="login-card-footer-nav">
+             </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Script de JS-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+  <!--   Archivo de validaciones personalizado   -->
+  <script src="assets/js/traduccionesValidate.js"></script>
+  <!--  Alertas de SweetAlert   -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!--  Archivo de Funciones de login   -->	
+  <script src="assets/js/login.js"></script>
+</body>
+
+</html>
+</html>
